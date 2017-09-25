@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { HelloWorldComponent } from './components/helloworld/helloworld.component';
+import { WeatherComponent } from './components/weather/weather.component';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { HelloWorldComponent } from './components/helloworld/helloworld.componen
         CounterComponent,
         FetchDataComponent,
         HomeComponent,
-        HelloWorldComponent
+        HelloWorldComponent,
+        WeatherComponent
     ],
     imports: [
         CommonModule,
@@ -30,6 +32,7 @@ import { HelloWorldComponent } from './components/helloworld/helloworld.componen
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'hello', component: HelloWorldComponent },
+            { path: 'weather', component: WeatherComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
